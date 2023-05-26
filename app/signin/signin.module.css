@@ -1,0 +1,152 @@
+.SignIn{
+    background:linear-gradient(rgb(9, 176, 9) 0%, green 100%);
+    background-color: green;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato,sans-serif;
+}
+.formContainer{
+    background-color: #fff;
+    max-width: 340px;
+    width: 340px;
+    min-width: 280px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 2em;
+    border-radius: 10px;
+}
+.logoContainer{
+    margin: 5px 0px 30px 0px;
+}
+.form{
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+.email{
+    width: 100%;
+    margin:15px 0px;
+    position: relative;
+}
+.password{
+    position: relative;
+    width: 100%;
+    margin:15px 0px;
+}
+.emailIcon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #787879;
+    font-size: 18px;
+    padding: 0px 2px;
+}
+.emailInput{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px 0px 10px 25px;
+    font-size: 14px;
+    border-bottom: 2px solid gray;
+}
+.emailInput:focus{
+    border-bottom: 2px solid rgb(88, 215, 34);
+}
+.PasswordIcon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #787879;
+    font-size: 18px;
+    padding: 0px 2px;
+}
+
+.passwordInput{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px 0px 10px 25px;
+    font-size: 14px;
+    border-bottom: 2px solid gray;
+}
+.passwordInput:focus{
+    border-bottom: 2px solid rgb(88, 215, 34);
+}
+
+.CheckboxForgotPassword{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.checkboxRemember{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox{
+    margin-right: 5px;
+    font-size: 8px;
+}
+.forgot{
+    color: green;
+}
+.signinButton{
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    background-color: rgb(12, 148, 12);
+    outline: none;
+    border: none;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+.Noaccount{
+    text-align: center;
+    margin: 10px 0px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    margin: 36px 0px;
+    background-color: #d4d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line::before{
+    content: "Or";
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    color: #232836;
+}
+.google{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border: 2px solid green;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.googleImg{
+    margin-right: 25%;
+}
