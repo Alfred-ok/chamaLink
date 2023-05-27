@@ -30,11 +30,11 @@ export default function Page({useradd}) {
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>
-                <MailOutlineIcon className={Styles.emailIcon}/>
+                <MailOutlineIcon size="small" style={{fontSize: '18px'}} className={Styles.emailIcon}/>
                 <input className={Styles.emailInput} type='text' placeholder='Enter Your Email' required/>
               </div>
               <div className={Styles.password}>
-                <LockOutlinedIcon className={Styles.PasswordIcon}/>
+                <LockOutlinedIcon size="small" style={{fontSize: '18px'}} className={Styles.PasswordIcon}/>
                 <input className={Styles.passwordInput} type='password' placeholder='Enter Your Password' required />
               </div>
               <div className={Styles.CheckboxForgotPassword}>

@@ -30,11 +30,11 @@ export default function Page() {
                 <input className={Styles.emailInput} type='text' placeholder='Enter Your Email' required/>
               </div>
               <div className={Styles.password}>
-                <LockOutlinedIcon className={Styles.PasswordIcon}/>
+                <LockOutlinedIcon size="small" className={Styles.PasswordIcon}/>
                 <input className={Styles.passwordInput} type='password' placeholder='Create Password' required />
               </div>
               <div className={Styles.password}>
-                <LockOutlinedIcon className={Styles.PasswordIcon}/>
+                <LockOutlinedIcon size="small" className={Styles.PasswordIcon}/>
                 <input className={Styles.passwordInput} type='password' placeholder='Confirm Password' required />
               </div>
               <button className={Styles.signupButton} onClick={()=>router.push('/')}>Sign Up</button>
