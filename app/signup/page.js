@@ -26,15 +26,15 @@ export default function Page() {
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>
-                <MailOutlineIcon className={Styles.emailIcon}/>
+                <MailOutlineIcon style={{fontSize: '18px'}} className={Styles.emailIcon}/>
                 <input className={Styles.emailInput} type='text' placeholder='Enter Your Email' required/>
               </div>
               <div className={Styles.password}>
-                <LockOutlinedIcon size="small" className={Styles.PasswordIcon}/>
+                <LockOutlinedIcon size="small" style={{fontSize: '18px'}} className={Styles.PasswordIcon}/>
                 <input className={Styles.passwordInput} type='password' placeholder='Create Password' required />
               </div>
               <div className={Styles.password}>
-                <LockOutlinedIcon size="small" className={Styles.PasswordIcon}/>
+                <LockOutlinedIcon size="small" style={{fontSize: '18px'}} className={Styles.PasswordIcon}/>
                 <input className={Styles.passwordInput} type='password' placeholder='Confirm Password' required />
               </div>
               <button className={Styles.signupButton} onClick={()=>router.push('/')}>Sign Up</button>
