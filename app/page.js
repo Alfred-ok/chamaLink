@@ -1,8 +1,8 @@
 'use client'
 
-import Signin from './Signin/Page'
+import Signin from './signin/page'
 import { useState } from 'react';
-import Projects from './Projects/Page'
+import Projects from './projects/page'
 export default function Home() {
   const [user, setuser] = useState(false);
   const useradd = (add) =>{
