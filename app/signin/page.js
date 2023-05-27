@@ -10,7 +10,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import GoogleIcon from '../../public/signin-up resources/icons8-google-96.png'
 import Link from 'next/link'
 
-export default function page({useradd}) {
+export default function Page({useradd}) {
   const [user, setUser] = useState(false)
 
   const handleuser = ()=>{
@@ -26,7 +26,7 @@ export default function page({useradd}) {
 
       <div className={Styles.formContainer}>
           <div className={Styles.logoContainer}>
-            <Image src={KawilabLogo} height={150}/>
+            <Image src={KawilabLogo} alt='kawilab logo' height={150}/>
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>
@@ -48,7 +48,7 @@ export default function page({useradd}) {
               <h6 className={Styles.Noaccount}>Don't have an acccount? <Link href='/signup'>Sign Up</Link></h6>
               <div className={Styles.line}></div>
               <button className={Styles.google}>
-                <Image src={GoogleIcon} height={25} className={Styles.googleImg}/>
+                <Image src={GoogleIcon} height={25} alt='google signup logo' className={Styles.googleImg}/>
                 Login with Google
               </button>
           </form>

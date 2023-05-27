@@ -8,11 +8,11 @@ import KawilabLogo from '../../public/modification1.png'
 import styles from './projects.module.css'
 import Image from 'next/image';
 
-export default function page() {
+export default function Page() {
   return (
     <div className={styles.projectComponent}>
         <div className={styles.nav}>
-            <div className={styles.logo}><Image src={KawilabLogo} height={60}/></div>
+            <div className={styles.logo}><Image src={KawilabLogo} alt='kawilab logo' height={60}/></div>
             <div className={styles.ContainerProfile}> 
                 <div><AccountCircleIcon className={styles.profile}/></div>
             </div>

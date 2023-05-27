@@ -12,7 +12,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 
 
-export default function page() {
+export default function Page() {
   const router = useRouter()
   const handleSubmit =(e)=>{
     e.preventDefault();
@@ -22,7 +22,7 @@ export default function page() {
 
       <div className={Styles.formContainer}>
           <div className={Styles.logoContainer}>
-            <Image src={KawilabLogo} height={150}/>
+            <Image src={KawilabLogo} alt='kawilab logo' height={150}/>
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>
@@ -41,7 +41,7 @@ export default function page() {
               <h6 className={Styles.Noaccount}>Already have an acccount? <Link href='/signin'>Sign In</Link></h6>
               <div className={Styles.line}></div>
               <button className={Styles.google}>
-                <Image src={GoogleIcon} height={25} className={Styles.googleImg}/>
+                <Image src={GoogleIcon} alt='google signup logo' height={25} className={Styles.googleImg}/>
                 Login with Google
               </button>
           </form>
