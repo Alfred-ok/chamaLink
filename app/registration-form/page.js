@@ -32,8 +32,8 @@ export default function Page() {
       <h1>Chama Registration</h1>
       <form className='formContainer' onSubmit={handleSubmit}>
           {
-            inputproperty.map(property=>(
-              <Input type={property.type} placeholder={property.placeholder} label={property.label}/>
+            inputproperty.map((property, index)=>(
+              <Input type={property.type} placeholder={property.placeholder} label={property.label} key={index}/>
             ))
           }
           <button>Submit</button>
