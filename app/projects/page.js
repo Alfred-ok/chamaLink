@@ -7,8 +7,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import KawilabLogo from '../../public/modification1.png'
 import styles from './projects.module.css'
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
+  const router = useRouter() 
   return (
     <div className={styles.projectComponent}>
         <div className={styles.nav}>
@@ -32,7 +34,7 @@ export default function Page() {
 
             <div className={styles.project}>
                 <div className={styles.newProjects}>
-                    <button className={styles.addButton}><AddCircleIcon className={styles.addIcon}/></button>
+                    <button className={styles.addButton} onClick={()=>router.push('/registration-form')}><AddCircleIcon className={styles.addIcon}/></button>
                     <h5 className={styles.registerChama}>Register New Chama</h5>
                 </div>
             </div>
