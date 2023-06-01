@@ -1,13 +1,14 @@
 'use client'
 
 import React from 'react'
-import AddCircleIcon from '@mui/icons-material/AddCircle';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SearchIcon from '@mui/icons-material/Search';
 import KawilabLogo from '../../public/modification1.png'
 import styles from './projects.module.css'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import AddIcon from '@mui/icons-material/Add';
+import Fab from '@mui/material/Fab';
 
 export default function Page() {
   const router = useRouter() 
@@ -34,7 +35,9 @@ export default function Page() {
 
             <div className={styles.project}>
                 <div className={styles.newProjects}>
-                    <button className={styles.addButton} onClick={()=>router.push('/registration-form')}><AddCircleIcon className={styles.addIcon}/></button>
+                    <Fab color="primary" aria-label="add" onClick={()=>router.push('/registration-form')}>
+                        <AddIcon />
+                    </Fab>
                     <h5 className={styles.registerChama}>Register New Chama</h5>
                 </div>
             </div>

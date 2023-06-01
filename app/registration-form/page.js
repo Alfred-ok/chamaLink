@@ -24,7 +24,7 @@ export default function Page() {
   const router = useRouter();
   const handleSubmit =(e)=>{
     e.preventDefault()
-    router.push('/chama')
+    router.push('/dashboard')
   }
   return (
 

@@ -86,24 +86,9 @@
     flex-flow: column;
     background-color: #fff;
 }
-.addButton{
-    border: none;
-    outline: none;
-    padding: 0px;
-    margin: 0px;
-    background-color: #e7e6e6;
-    border-radius: 50%;
-    padding: 20px;
-}
-.addIcon{
-    color: green;
-    font-size: 48px;
-}
-.addButton:hover{
-    background-color: rgb(218, 245, 218);
-}
+
 .registerChama{
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
 }
 .projectHead{
