@@ -13,6 +13,10 @@
 .listicon{
     padding-right: 10px;
 }
+.listItem:first-child{
+    background-color: rgb(56, 203, 3);
+    color: #fff;
+}
 .listItem:hover{
     background-color: rgb(56, 203, 3);
     color: #fff;
