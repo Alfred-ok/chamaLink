@@ -8,12 +8,12 @@ import { useRouter } from 'next/navigation'
 
 export default function Page() {
   const [inputproperty, setInputproperty] =useState([
-    {type:'email',placeholder:'Enter Email',label:'Email'},
-    {type:'name',placeholder:'Enter name',label:'Name'},
-    {type:'email',placeholder:'Enter Email',label:'Email'},
-    {type:'number',placeholder:'Enter Phone number',label:'Phone Number'},
-    {type:'date',placeholder:'Enter Date of Birth',label:'Date of Birth'},
-    {type:'Number',placeholder:'Enter Id Number',label:'Identification Number(ID)'},
+    {type:'text',placeholder:'Enter Chama Name',label:'Chama Name'},
+    {type:'number',placeholder:'Enter Number of Members',label:'Number of Members'},
+    {type:'text',placeholder:'Enter Country',label:'Country'},
+    {type:'text',placeholder:'Enter County',label:'County'},
+    {type:'text',placeholder:'Enter Registration Status',label:'Registration Status'},
+    {type:'text',placeholder:'Enter Registration Number',label:'Registration Number'},
     {type:'email',placeholder:'Enter Email',label:'Email'},
     {type:'name',placeholder:'Enter name',label:'Name'},
     {type:'email',placeholder:'Enter Email',label:'Email'},
