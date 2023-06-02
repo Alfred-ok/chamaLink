@@ -17,12 +17,13 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    
     padding: 2em;
     border-radius: 10px;
 }
 .logoContainer{
     margin: 5px 0px 30px 0px;
+    color: green;
+    font-weight: 900;
 }
 .form{
     margin: 0;
@@ -109,6 +110,7 @@
     border: none;
     margin: 20px 0px;
     border-radius: 10px;
+    font-size: 18px;
 }
 .Noaccount{
     text-align: center;

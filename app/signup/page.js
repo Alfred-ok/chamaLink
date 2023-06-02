@@ -22,7 +22,7 @@ export default function Page() {
 
       <div className={Styles.formContainer}>
           <div className={Styles.logoContainer}>
-            <Image src={KawilabLogo} alt='kawilab logo' height={150}/>
+            <h1> Chama Link </h1>
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>

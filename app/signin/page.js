@@ -8,6 +8,7 @@ import Image from 'next/image'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import GoogleIcon from '../../public/signin-up resources/icons8-google-96.png'
+import { TextField } from '@mui/material'
 import Link from 'next/link'
 
 export default function Page({useradd}) {
@@ -26,7 +27,7 @@ export default function Page({useradd}) {
 
       <div className={Styles.formContainer}>
           <div className={Styles.logoContainer}>
-            <Image src={KawilabLogo} alt='kawilab logo' height={150}/>
+            <h1> Chama Link </h1>
           </div>
           <form className={Styles.form} onSubmit={handleSubmit}>
               <div className={Styles.email}>
@@ -44,7 +45,7 @@ export default function Page({useradd}) {
                 </div>
                 <div className={Styles.forgot}>Forgot Password?</div>
               </div>
-              <button className={Styles.signinButton} onClick={handleuser}>Sign in</button>
+              <button className={Styles.signinButton} onClick={handleuser}>Sign In</button>
               <h6 className={Styles.Noaccount}>Don't have an acccount? <Link href='/signup'>Sign Up</Link></h6>
               <div className={Styles.line}></div>
               <button className={Styles.google}>
