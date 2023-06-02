@@ -11,14 +11,17 @@
     padding: 10px;
 }
 .container button{
-    background-color: green;
     outline: none;
     border: none;
+    background-color: green;
     color: #fff;
     padding: 15px;
     width: 40%;
     border-radius: 20px;
     margin: 30px 0px;
+}
+.container button:focus{
+    background-color: rgb(1, 217, 1);
 }
 .formContainer{
     display: flex;
