@@ -1,7 +1,6 @@
 'use client'
-
+import { useState } from 'react'
 import Signin from './signin/page'
-import { useState } from 'react';
 import Projects from './projects/page'
 export default function Home() {
   const [user, setuser] = useState(false);
@@ -10,7 +9,7 @@ export default function Home() {
   }
   return (
     <div>
-      {user? <Projects/>: <Signin useradd = {useradd}/>}
+        {user ?<Projects/>: <Signin useradd = {useradd}/>}
     </div>
   )
 }

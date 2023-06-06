@@ -3,12 +3,10 @@
 
 import React, { useState } from 'react'
 import Styles from './signin.module.css'
-import KawilabLogo from '../../public/modification1.png'
 import Image from 'next/image'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import GoogleIcon from '../../public/signin-up resources/icons8-google-96.png'
-import { TextField } from '@mui/material'
 import Link from 'next/link'
 
 export default function Page({useradd}) {

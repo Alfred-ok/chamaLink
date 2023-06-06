@@ -1,6 +1,6 @@
 .list{
     padding: 0px;
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 400;
 }
 .listItem{
@@ -9,11 +9,23 @@
     padding: 10px 10px 10px 30px;
     margin: 5px;
     border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 .listicon{
     padding-right: 10px;
 }
-.listItem:first-child{
+.active{
+    background-color: rgb(56, 203, 3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 30px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.listItem:focus{
     background-color: rgb(56, 203, 3);
     color: #fff;
 }

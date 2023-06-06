@@ -3,7 +3,6 @@
 import React from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SearchIcon from '@mui/icons-material/Search';
-import KawilabLogo from '../../public/modification1.png'
 import styles from './projects.module.css'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -15,7 +14,7 @@ export default function Page() {
   return (
     <div className={styles.projectComponent}>
         <div className={styles.nav}>
-            <div className={styles.logo}><Image src={KawilabLogo} alt='kawilab logo' height={60}/></div>
+            <div className={styles.logo}>ChamaLink</div>
             <div className={styles.ContainerProfile}> 
                 <div><AccountCircleIcon className={styles.profile}/></div>
             </div>
