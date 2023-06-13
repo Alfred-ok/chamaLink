@@ -1,0 +1,60 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'lato',sans-serif;
+    background-color: rgb(246, 245, 245);
+    height: 80vh;
+}
+.cardInfo{
+    padding: 20px;
+    width: 700px;
+}
+.cardTitle{
+    padding: 200px 0px 0px 0px;
+    width: 400px;
+    margin: 0 auto;
+}
+.cardTitle h1{
+    font-size: 36px;
+}
+.cardDescription{
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.cardDescription p{
+    color: grey;
+}
+.cardButtons{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.cardButtons button{
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    margin-right: 20px;
+    box-shadow: 2px 2px 8px 2px rgb(220, 220, 220);
+}
+.cardButtons button:hover{
+    background-color: blue;
+}
+.cardButtons button:first-child{
+    background-color: green;
+    color: #fff;
+}
+.cardButtons button:nth-child(2){
+    background-color: #fff;
+}
+.cardImageInfo{
+    padding: 20px;
+}
+.vectorImage{
+    max-height: 70vh;
+    min-height: 30vh;
+    max-width: 700px;
+    min-width: 320px;
+}

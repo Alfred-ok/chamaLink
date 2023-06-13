@@ -1,0 +1,15 @@
+.partnerWrap{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'lato',sans-serif;
+}
+.partnerWrap h4{
+    text-align: center;
+}
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 60px;
+}

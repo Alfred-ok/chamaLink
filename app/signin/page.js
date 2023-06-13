@@ -1,6 +1,4 @@
 'use client'
-
-
 import React, { useState } from 'react'
 import Styles from './signin.module.css'
 import Image from 'next/image'
@@ -8,17 +6,12 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import GoogleIcon from '../../public/signin-up resources/icons8-google-96.png'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 
-export default function Page({useradd}) {
-  const [user, setUser] = useState(false)
-
-  const handleuser = ()=>{
-    setUser(true)
-  }
-
+export default function Page() {
+  const router = useRouter();
   const handleSubmit =(e)=>{
     e.preventDefault();
-    useradd(user);
   };
   return (
     <div className={Styles.SignIn}>
@@ -43,7 +36,7 @@ export default function Page({useradd}) {
                 </div>
                 <div className={Styles.forgot}>Forgot Password?</div>
               </div>
-              <button className={Styles.signinButton} onClick={handleuser}>Sign In</button>
+              <button className={Styles.signinButton} onClick={()=>router.push('/chama')}>Sign In</button>
               <h6 className={Styles.Noaccount}>Don't have an acccount? <Link href='/signup'>Sign Up</Link></h6>
               <div className={Styles.line}></div>
               <button className={Styles.google}>
