@@ -5,7 +5,7 @@ import './landingpage.css'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-function landingTopInfo() {
+function LandingTopInfo() {
   const router = useRouter();
   return (
     <div className='card'>
@@ -31,4 +31,4 @@ function landingTopInfo() {
   )
 }
 
-export default landingTopInfo
+export default LandingTopInfo
