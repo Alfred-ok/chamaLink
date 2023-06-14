@@ -11,7 +11,7 @@ function LandingTopInfo() {
     <div className='card'>
         <div className='cardInfo'>
             <div className='cardTitle'>
-              <h1>ChamaLink Solutions That helps your Chama</h1>
+              <h1>Let's Grow Your Chama<span style={{color:"green"}}> To The Next Level</span> </h1>
             </div>
             <div className='cardDescription'>
               <p>
@@ -21,7 +21,7 @@ function LandingTopInfo() {
             </div>
             <div className='cardButtons'>
               <button onClick={()=>router.push('/signin')}>Log In</button>
-              <button onClick={()=>router.push('/signup')}>Sign Up</button>
+              <button onClick={()=>router.push('/signup')}>Join Us</button>
             </div>
         </div>
         <div className='cardImageInfo'>

@@ -2,23 +2,24 @@
     display: flex;
     flex-wrap: wrap;
     font-family: 'lato',sans-serif;
-    background-color: rgb(246, 245, 245);
+    background-color: rgb(232, 232, 232);
     height: 80vh;
+    width: 100%;
 }
 .cardInfo{
     padding: 20px;
     width: 700px;
 }
 .cardTitle{
-    padding: 200px 0px 0px 0px;
-    width: 400px;
+    padding: 160px 0px 0px 0px;
+    width: 500px;
     margin: 0 auto;
 }
 .cardTitle h1{
-    font-size: 36px;
+    font-size: 48px;
 }
 .cardDescription{
-    max-width: 400px;
+    max-width: 500px;
     padding: 10px;
     margin: 0 auto;
 }
@@ -26,7 +27,7 @@
     color: grey;
 }
 .cardButtons{
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -35,7 +36,7 @@
     outline: none;
     border: none;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
     margin-right: 20px;
     box-shadow: 2px 2px 8px 2px rgb(220, 220, 220);
 }
@@ -48,6 +49,7 @@
 }
 .cardButtons button:nth-child(2){
     background-color: #fff;
+    border: 2px solid green;
 }
 .cardImageInfo{
     padding: 20px;
