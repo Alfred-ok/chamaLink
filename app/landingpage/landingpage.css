@@ -2,13 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     font-family: 'lato',sans-serif;
-    background-color: rgb(232, 232, 232);
+    /*background-color: rgb(232, 232, 232);*/
+    background-color: green;
     height: 80vh;
     width: 100%;
 }
 .cardInfo{
     padding: 20px;
     width: 700px;
+    color: #fff;
 }
 .cardTitle{
     padding: 160px 0px 0px 0px;
@@ -24,7 +26,7 @@
     margin: 0 auto;
 }
 .cardDescription p{
-    color: grey;
+    color: #fff;
 }
 .cardButtons{
     max-width: 500px;
@@ -38,18 +40,17 @@
     border-radius: 10px;
     width: 30%;
     margin-right: 20px;
-    box-shadow: 2px 2px 8px 2px rgb(220, 220, 220);
+    background-color:#fff;
 }
 .cardButtons button:hover{
-    background-color: blue;
+    background-color: rgb(232, 232, 232);
+    color: #000;
 }
 .cardButtons button:first-child{
-    background-color: green;
-    color: #fff;
+    border: 3px solid green;
 }
 .cardButtons button:nth-child(2){
-    background-color: #fff;
-    border: 2px solid green;
+    border: 3px solid green;
 }
 .cardImageInfo{
     padding: 20px;
