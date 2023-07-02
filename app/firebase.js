@@ -1,9 +1,9 @@
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/database';
 
-import firebase from "firebase";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
+// Web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAgXzADUvPAkMuCxDsqPDm7lrB5mNJFtN4",
@@ -19,7 +19,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 //Intialize variables
-const firestoreDatabase = firebaseApp.firestore();
-const auth = firebase.auth();
-const realtimeDatabase = firebase.database();
-export {firestoreDatabase, auth};
+const auth = firebaseApp.auth();
+const realtimeDatabase = firebaseApp.database();
+
+export { realtimeDatabase, auth};
