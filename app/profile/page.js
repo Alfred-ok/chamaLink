@@ -1,9 +1,11 @@
 import React from 'react'
-
-function page() {
+import ProfilePage from './profilePage/page'
+function Page() {
   return (
-    <div>Profile page</div>
+    <div>
+      <ProfilePage/>
+    </div>
   )
 }
 
-export default page
+export default Page

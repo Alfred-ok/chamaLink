@@ -4,16 +4,17 @@ import Nav from './nav/page'
 
 function ChamaLayout({children}) {
   return (
-    <div style={{height:'100vh'}}>
+  <div style={{height:'100vh'}}>
     <div className='body'>
-    <Aside className='aside'/>
-    <div className='container'>
-      <Nav  className='nav'/>
-      <div className='pages'>
-        {children}
+      <Aside className='aside'/>
+      <div className='container'>
+        <Nav  className='nav'/>
+        <div className='pages'>
+          {children}
+        </div>
       </div>
     </div>
-  </div></div>
+  </div>
   )
 }
 

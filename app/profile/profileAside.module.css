@@ -1,0 +1,13 @@
+.asidenav{
+    position: sticky;
+    padding: 10px;
+    border-right: 1px solid rgb(190, 189, 189);
+    height: 85vh;
+}
+.asidenavItem{
+    padding: 10px;
+    background-color: green;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
