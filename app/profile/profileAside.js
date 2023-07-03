@@ -1,14 +1,19 @@
+'use client'
+
 import React from 'react'
 import Style from './profileAside.module.css'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 function ProfileAside() {
-  return (
+  const pathname = usePathname();
+  return ( 
     <div className={Style.asidenav}>
-        <div className={Style.asidenavItem}>
+        <Link href={`/profile`} className={pathname == '/profile' ? Style.active :Style.asidenavItem}>
             Profile
-        </div>
-        <div className={Style.asidenavItem}>
+        </Link>
+        <Link href={`/profile/groupPage`} className={pathname == '/profile/groupPage' ? Style.active :Style.asidenavItem}>
             Groups
-        </div>
+        </Link>
     </div>
   )
 }

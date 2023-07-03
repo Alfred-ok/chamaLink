@@ -13,7 +13,7 @@ import { usePathname} from 'next/navigation';
 
 export default function Asidelist() {
     const [list, setList] = useState([
-        {Item:'Dashboard', typelink:'dashboardChama',icon:<DashboardIcon/>},
+        {Item:'Dashboard', typelink:'',icon:<DashboardIcon/>},
         {Item:'Money Sent', typelink:'sent', icon:<VerticalAlignTopIcon/>},
         {Item:'Money Received',typelink:'received', icon:<VerticalAlignBottomIcon/>},
         {Item:'Chat', typelink:'chat',icon:<GroupsIcon/>},

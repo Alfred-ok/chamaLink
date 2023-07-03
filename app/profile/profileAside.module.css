@@ -6,8 +6,24 @@
 }
 .asidenavItem{
     padding: 10px;
-    background-color: green;
     margin: 10px;
     border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+.asidenavItem:hover{
+    background-color: green;
+    color: #fff;
+}
+.active{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: green;
     color: #fff;
 }
