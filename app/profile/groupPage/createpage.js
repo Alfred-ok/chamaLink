@@ -3,7 +3,7 @@
 import React from 'react'
 import Style from './createpage.module.css'
 import { useRouter } from 'next/navigation'
-function createpage() {
+function Createpage() {
   const router = useRouter();
   return (
     <div className={Style.card}>
@@ -17,4 +17,4 @@ function createpage() {
   )
 }
 
-export default createpage
+export default Createpage
