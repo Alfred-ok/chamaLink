@@ -1,5 +1,6 @@
 import React from 'react';
 import Style from './profileNav.module.css';
+import Link from 'next/link';
 
 function ProjectNav() {
   return (
@@ -8,7 +9,9 @@ function ProjectNav() {
           <h2>Chama Link</h2>
         </div>
         <div>
-            <button className={Style.updateButton}>Log Out</button>
+            <Link href='/signin'>
+              <button className={Style.updateButton} >Log Out</button>
+            </Link>
         </div>
     </div>
   )

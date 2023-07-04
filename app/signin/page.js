@@ -7,10 +7,17 @@ import Style from './signin.module.css'
 import { useRouter } from 'next/navigation'
 import {auth, realtimeDatabase} from '../firebase'
 import { useState } from 'react'
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 export default function Page() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  //password show/hide 
+  const [showpasswordIcon, setPasswordShowIcon] = useState(<VisibilityIcon/>)
+  const [togglepassword, setTogglepassword] = useState(false);
+  const [typePassword, setTypePassword] = useState('password');
 
   const router = useRouter()
   const handleSubmit =(e) =>{
@@ -32,9 +39,20 @@ export default function Page() {
        //Done
     })
     .catch(err=>alert(err.message, err.code))
-
-  
     
+  }
+  //password visuals on and off
+  const passwordShow = () =>{ 
+    setTogglepassword(!togglepassword)
+
+    if(togglepassword){
+      setTypePassword('text');
+      setPasswordShowIcon(<VisibilityOffIcon/>);
+ 
+    }else{
+      setTypePassword('password');
+      setPasswordShowIcon(<VisibilityIcon/>);
+    }
   }
   return (
     <div className={Style.container}>
@@ -53,11 +71,16 @@ export default function Page() {
             </div>
             <div className= {Style.inputContainer}>
               <label>Email address</label>
-              <input type='text' placeholder='Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+              <div className={Style.emailInput}>
+                <input type='text' placeholder='Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+              </div>
             </div>
             <div className= {Style.inputContainer}>
               <label>Password</label>
-              <input type='password' placeholder='password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+              <div className={Style.passwordWrap}>
+                <input type={typePassword} placeholder='password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+                <div className={Style.passIcon} onClick={passwordShow}>{showpasswordIcon}</div>
+              </div>
             </div>
             <div className= {Style.forgot}>Forgot password?</div>
             <div className= {Style.buttonContainer} >

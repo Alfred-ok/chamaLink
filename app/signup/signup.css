@@ -79,12 +79,10 @@ input{
     border-radius: 10px;
     outline: none;
 }
-input:focus{
-    border: 2px solid green;
-}
 .inputCover{
     width: 100%;
 }
+
 .doubleInput{
     display: flex;
     justify-content: space-between;
@@ -92,6 +90,7 @@ input:focus{
 .doubleInput input{
     min-width: 40%;
     margin-bottom: 8px;
+    border: 1px solid gray;
 }
 .inputs button{
     padding: 20px;
@@ -100,4 +99,27 @@ input:focus{
     border: none;
     border-radius: 10px;
     width: 100%;
+}
+.passwordWrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.inputBorder{
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.passwordWrap input{
+    width: 80%;
+    padding: 0px 15px;
+}
+.pass{
+    width: 10%;
+    padding: 10px 0px;
+    color: rgb(98, 98, 98);
+    font-weight: 500;
+    cursor: pointer;
 }
